@@ -21,5 +21,7 @@
 ## Deployment
 This project is deployed using [Surge](https://surge.sh/). You can play the game directly at the live site link above.
 
+<img width="1919" height="1079" alt="screenshot" src="https://github.com/user-attachments/assets/343d4dd0-8c1b-4bab-b35f-c7898a07339c" />
+
 
 
