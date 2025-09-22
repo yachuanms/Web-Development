@@ -1,0 +1,96 @@
+<!--打驚嘆號加tab自動生成-->
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ya-Chuan Hsu">
+    <title>Form Processor</title>
+</head>
+<body>
+    <h1>Form processor</h1>
+    <div id="output">
+        <table border = "1">
+            <caption>Registration Result</caption>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>User Input</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Account Name</th>
+                    <th id="accountName"></th>
+                </tr>
+                <tr>
+                    <th>Display Name</th>
+                    <th id="displayName"></th>
+                </tr>
+                <tr>
+                    <th>Email Address</th>
+                    <th id="email"></th>
+                </tr>
+                <tr>
+                    <th>Phone</th>
+                    <th id="phone"></th>
+                </tr>
+                <tr>
+                    <th>Birthday</th>
+                    <th id="birthday"></th>
+                </tr>
+                <tr>
+                    <th>Zipcode</th>
+                    <th id="zipcode"></th>
+                </tr>
+                <tr>
+                    <th>Password</th>
+                    <th id="password"></th>
+                </tr>
+                <tr>
+                    <th>Password Confirmation</th>
+                    <th id="passwordConfirm"></th>
+                </tr>
+                <tr>
+                    <th>Timestamp</th>
+                    <th id="timestamp"></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+
+<script>
+    const parameters = new URLSearchParams(window.location.search);
+    const accountName = parameters.get("accountName");
+    const displayName = parameters.get("displayName");  
+    const email = parameters.get("email");
+    const phone = parameters.get("phone");
+    const birthday = parameters.get("birthday");
+    const zipcode = parameters.get("zipcode");
+    const password = parameters.get("password");
+    const passwordConfirm = parameters.get("passwordConfirm");
+    const timestamp = parameters.get("timestamp");
+
+    function humanReadTime(time){
+        const date = time.split("T")[0];
+        const other = time.split("T")[1];
+        const offZ = other.replace("Z", "");
+        const millsec = offZ.split(".")[0];
+        return date+" "+millsec+" UTC"
+    }
+
+    
+    document.getElementById("accountName").textContent = accountName;
+    document.getElementById("displayName").textContent = displayName;
+    document.getElementById("email").textContent = email;
+    document.getElementById("phone").textContent = phone;
+    document.getElementById("birthday").textContent = birthday;
+    document.getElementById("zipcode").textContent = zipcode;
+    document.getElementById("password").textContent = "*".repeat(password.length);
+    document.getElementById("passwordConfirm").textContent = "*".repeat(passwordConfirm.length);
+    document.getElementById("timestamp").textContent = humanReadTime(timestamp);
+
+</script>
+</html>
