@@ -1,0 +1,140 @@
+header{
+    text-align: center;
+    background: #557294;
+    color: white;
+    padding: 15px; /*內容(content) 和 邊框(border) 之間的距離*/
+    margin-bottom:30px;
+}
+
+header a{
+    color:white;
+    padding: 15px;
+}
+
+
+.toggleBtn{
+    background: #7698c0;
+    color:#eaf1f9;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+/* 每則 post 的框框 */
+.post {
+    gap :20px;
+    border: 2px solid #ccc;      /* 淺灰色邊框 */
+    border-radius: 8px;          /* 圓角 */
+    padding: 20px;               /* 內距 */
+    margin: 0 auto;           /* 上下貼文的間距，左右置中 */
+    max-width: 1000px;            /* 最大寬度 */
+    background-color:   #eaf1f9;   /* 框框背景顏色 */
+    box-shadow: 0 2px 5px rgba(104, 139, 185, 0.764); /* 淡淡陰影框框 */
+}
+
+
+.post img {
+    max-width: 300px;
+    width: 100%;  /*圖片寬度*/
+    border-radius: 8px;
+    display: block;  /*img 預設是 inline 元素，margin: 0 auto; 只對 block 元素有用*/
+    margin: 10px auto;
+}
+
+.pictureSlide{
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-end; 讓他靠右邊小小的*/
+}
+.pictureSlide img{
+    max-width: 200px;  /*圖片寬度*/
+    max-height: 200px;
+    display: block;/* 避免圖片和按鈕在同一行 */
+    margin-top: 20px;
+    margin-bottom: 20px; /*圖片和下面元素（按鈕）之間*/
+}
+
+/* 誰說的 / 日期 */
+.post span {
+    display: block;              /* 換行 */
+    font-weight: bold;           /* 粗體 */
+    color: #333;                /* 字 */
+    margin-bottom: 8px;          /* 跟內文保持距離 */
+}
+
+/* 內文文字 */
+.post p {
+    display: block; 
+    margin: 0;                   /* 拿掉預設外距 */
+    line-height: 1.6;            /* 行距 */
+    color: #555;                /* 字顏色 */
+}
+
+/*表格*/
+table {
+    border-collapse: separate;
+    width :100%;
+    height: 1000px;
+    max-width: 2000px;
+    border-spacing: 20px;   /* cell 之間留空隙 */
+    margin: 0 auto;         /* 整張表格置中 */
+}
+
+td {
+    vertical-align: top;    /* 貼文對齊上方 */
+}
+
+/*profile.html*/
+
+/*.是class 直接寫是標籤 #是id*/
+.profile {
+    max-width: 600px;
+    margin:auto;
+    background: white;
+    padding:20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.profile-field{
+    margin-bottom: 20px;
+}
+
+.profile-field label{
+    font-weight: bold;
+    display: inline-block;
+    width: 150px;
+    margin: auto;
+}
+
+.profile-field span{
+    margin-right: 10px;
+}
+
+#updateBtn{
+    background: #7698c0;
+    color:#eaf1f9;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#updateMsg{
+    text-align: left;
+    margin-top: 20px;
+    padding:10px;
+    max-height: 50px;
+    border-radius:5px ;
+}
+
+
+.update.invalid{
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.update.success{
+    background: #dff8e8;
+    color: #13442b;
+}
