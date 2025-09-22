@@ -1,0 +1,59 @@
+header{
+    text-align: center;
+    background: #93cff2;
+    color: white;
+    padding: 15px; /*內容(content) 和 邊框(border) 之間的距離*/
+    margin-bottom:30px;
+}
+
+body {
+    text-align: center; /* 所有 inline 或 inline-block 元素會置中 */
+}
+
+#rule {
+    background-color: white;
+    display: inline-block; /* 讓寬度自動符合內容 */
+    padding: 1em 2em;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+}
+
+.Btn {
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: #93cff2;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center; /* 水平置中整個區塊 */
+    align-items: flex-start; /* 頂部對齊 */
+    gap: 2em; /* 左右間距 */
+    margin-top: 2em;
+}
+
+.gameInfo {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    gap: 0.5em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+}
+
+#gameCanvas {
+    padding: 0.5em;
+    border-radius: 12px;
+}
+
+#blocks{
+    border-radius:10px ;
+}

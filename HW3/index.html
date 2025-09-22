@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "Ya-Chuan Hsu & yh167">
+    <title>Where's the difference</title>
+    <link rel="stylesheet" href="style.css">
+</head>   
+<body>
+    <header><h1>Find the difference color!</h1></header>
+    <div id = "rule">
+        <p>1. Click the "Start" button to begin the game.</p>
+        <p>2. Find and click the block with a different color.</p>
+        <p>3. Each wrong click adds a mistake. 5 mistakes will end the game.</p>
+        <p>4. If the timer runs out, the game ends.</p>
+        <p>5. Scores and metrics are updated automatically.</p>
+        
+    </div>
+    <div id="gameContainer">
+        <div class="gameInfo" id="gameInfo">
+            <div id="totalGames">Total Games: 0</div>
+            <div id="totalMistakes">Total Mistakes: 0</div>
+            <div id="bestScore">Best Score: </div>
+            <div id="mistake">Mistake: </div>
+            <div id="score">Score: </div>
+            <div id="time">Time: </div>
+            <button class="Btn" id="StartBtn">▶ Start</button>
+            <button class="Btn" id="ResetBtn">Reset</button>
+        </div>
+
+        <div id="gameCanvas">
+            <canvas id="blocks" width="400" height="400"></canvas>
+        </div>
+    </div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
