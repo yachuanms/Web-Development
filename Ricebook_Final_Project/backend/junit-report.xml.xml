@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites disabled="0" errors="0" failures="0" tests="5" time="0.962">
+ <testsuite name="RiceBook backend API" timestamp="2025-11-20T18:01:06" hostname="localhost" time="0.962" errors="0" tests="5" skipped="0" disabled="0" failures="0">
+  <testcase classname="RiceBook backend API" name="registers a new user" time="0.38" />
+  <testcase classname="RiceBook backend API" name="logs in the registered user" time="0.153" />
+  <testcase classname="RiceBook backend API" name="creates a new article and verifies it exists" time="0.262" />
+  <testcase classname="RiceBook backend API" name="updates the headline and reads it back" time="0.112" />
+  <testcase classname="RiceBook backend API" name="logs out the user" time="0.053" />
+ </testsuite>
+</testsuites>
