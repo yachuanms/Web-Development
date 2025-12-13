@@ -4,7 +4,7 @@ https://www.clear.rice.edu/comp431/#/assignments
 ## 🌐 Overview
 
 This repository contains my coursework and final project for **COMP 531 – Web Development** at **Rice University**.  
-It includes frontend, backend, and full-stack implementations covering modern web development concepts and practices.
+It includes frontend, backend, and full-stack implementations covering modern web development concepts and practices.  
 
 ---
 
