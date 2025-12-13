@@ -1,5 +1,6 @@
 ## Web Development (COMP 531)
 https://www.clear.rice.edu/comp431/#/assignments
+
 🌐 Web Development (COMP 531)
 
 This repository contains my coursework and final project for COMP 531 – Web Development at Rice University.
