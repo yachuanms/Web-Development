@@ -11,7 +11,7 @@ const cookieParser = require('cookie-parser');
 const mongoose = require('mongoose');
 const passport = require('passport');
 
-const connectionString = "mongodb+srv://yachuanms_db_user:RiceDB2025@cluster0.riaxpgd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const connectionString = "your_mongoDB+srv";
 
 // connect to mongoDB
 mongoose.connect(connectionString)
