@@ -12,7 +12,6 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 
 const connectionString = process.env.MONGO_URI;
-
 // connect to mongoDB
 mongoose.connect(connectionString)
   .then(() => console.log("Connected to MongoDB"))
